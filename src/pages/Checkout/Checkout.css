@@ -1,0 +1,45 @@
+.Card-Text {
+  padding-top: 30px;
+}
+.HeadingButton {
+  display: flex;
+}
+.ButtonLeftEnd {
+  margin-left: auto;
+}
+.basic-inputs {
+    margin-bottom: 20px;
+    width: 100%;
+}
+label.checkout-labels {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Define a class for the container */
+.Scroll {
+  margin-top: 20px;
+ /* Adjust the height as needed */
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Firefox support */
+  scrollbar-color: black #f0f0f0; /* Firefox support */
+
+  /* WebKit (Chrome, Safari) scrollbar customization */
+  &::-webkit-scrollbar {
+    width: 2px; /* Adjust the width as needed */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Change the thumb background color */
+    border-radius: 2px; /* Adjust the border radius as needed */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Change the track background color */
+  }
+}
+
+/* Style the scrollbar thumb on hover (optional) */
+.Scroll::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; /* Change the hover background color */
+}

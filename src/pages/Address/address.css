@@ -1,0 +1,114 @@
+.settings--page--container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  width: 100%;
+  padding-top: 35px;
+}
+
+.navigation--menu--container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navigation--menu--container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation--menu--container h2 img {
+  height: 18px;
+  width: 18px;
+}
+
+.navigation--items {
+  padding-left: 1rem;
+}
+
+/* ----------- */
+
+.order--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  padding: 2rem;
+}
+
+.order--header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.order--header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.wishlist--cards {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.d-none {
+  display: none;
+}
+
+.edit--profile--container {
+  padding: 1rem;
+  background-color: white;
+}
+.edit--p--header {
+  cursor: pointer;
+}
+
+.add--address h3,
+.add--address2 h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.address--fields {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.add--address2 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .address--fields {
+   
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .edit--basic--info{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+
+.edit--basic--info{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media (max-width:700px){
+  .edit--basic--info{
+    flex-direction: column;
+  }
+}

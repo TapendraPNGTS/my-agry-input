@@ -1,0 +1,62 @@
+.r--container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.r--upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.r--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.r--info img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.r--name {
+  display: flex;
+  flex-direction: column;
+}
+
+.r--name p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 5px;
+}
+.r--name img {
+  width: auto;
+  height: 25px;
+}
+.r--content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1e1e1e;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .r--info img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .r--name img {
+    height: 1rem;
+    width: auto;
+  }
+}

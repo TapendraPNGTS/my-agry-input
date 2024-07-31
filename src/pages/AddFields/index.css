@@ -1,0 +1,13 @@
+.mapboxgl-ctrl-logo {
+    display: none !important;
+  }
+  .mapboxgl-ctrl-attrib{
+    display: none !important;;
+  }
+  th{
+    text-wrap: nowrap;
+}
+tr td{
+  max-lines: 1;
+  text-wrap: nowrap;
+}

@@ -1,0 +1,71 @@
+.navstrip-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: var(--green);
+  color: white;
+  font-size: 14px;
+}
+
+.navstrip-tele {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  width: 1600px;
+}
+.navstrip-tele p {
+  display: flex;
+  text-transform: uppercase;
+  padding-right: 20px;
+  font-size: 14px;
+  align-items: center;
+  min-width: max-content;
+  cursor: pointer;
+}
+.navstrip-tele::-webkit-scrollbar {
+  height: 0em;
+}
+
+.navstrip-tele::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.navstrip-tele::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .navstrip-parent {
+    padding: 0.2rem 1.5rem;
+  }
+  .dropdown-content {
+    top: 109px!important;
+  }
+  .opened .dropdown-content {
+    right: 10px;
+  }
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+     display: none;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 129px;
+    color: black;
+    line-height: 2;
+    z-index: 99;
+    box-shadow: 0 0 10px rgb(81 81 81 / 73%);
+    border-radius: 3px;
+}
+
+/* Display the dropdown content when the category is open */
+
+.opened .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,65 @@
+.layout-container {
+  max-width: 95%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home-parent {
+  padding-bottom: 1em;
+}
+
+.home-hero-content {
+  background-color: #edf2f7;
+  background-image: url("../../assets/images/Heroin_Image_My_Agri_Input_1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-margin {
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+}
+
+
+
+.content-scroll {
+  display: flex;
+  width: 100%;
+  gap:10px !important;
+  overflow-x: scroll;
+  margin-top:10px !important
+}
+
+.content-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-hero-content {
+    padding: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .home-hero-content {
+    padding: 30px;
+  }
+  .new-arrival{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .new-arrival{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) and (max-width: 2462px){
+.new-arrival{
+  grid-template-columns: repeat(4, 1fr);
+}}

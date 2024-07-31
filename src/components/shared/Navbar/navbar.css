@@ -1,0 +1,130 @@
+.navbar-parent {
+  display: flex;
+  height: 80px;
+  padding: 0px 50px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.052);
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+  position: sticky;
+    top: 20px;
+    z-index: 2;
+    background-color: white;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+a.nav-links-items {
+  color: black;
+  font-weight: 600;
+  margin: 0 12px;
+}
+.nav-links-items:hover{
+ border-bottom: 2px solid #FFA500;
+ /* width: 100%; */
+ transition: width 2s;
+ transition-timing-function: ease;
+
+}
+.active-nav-link{
+ border-bottom: 2px solid #FFA500;
+ width: 100%;
+ transition: width 2s;
+ transition-timing-function: ease;
+}
+.navs-ul-container{
+  display: flex;
+}
+.chakra-popover__arrow{
+  display: none;
+}
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-weight: 500;
+}
+
+.navbar-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .navbar-parent {
+    gap: 2rem;
+    padding: 0px 2rem;
+  }
+  .navbar-links {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar-links {
+    display: none;
+  }
+  a.nav-links-items {
+    margin: 0 6px;
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-parent {
+    gap: 1rem;
+    padding: 0px 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 680px){
+  a.nav-links-items{
+    display: none;
+  }
+  .navbar-parent{
+    width: 100%;
+    top: 0;
+    height: 70px;
+  }
+}
+
+
+/* language-icon */
+
+select.goog-te-combo {
+  width: 35px;
+    padding: 6px;
+}
+.skiptranslate.goog-te-gadget {
+ 
+    width: 30px;
+    position: relative;
+    margin-top: 50px;
+    opacity: 0;
+    z-index: 5;
+}
+div#google_translate_element {
+  width: 30px;
+}
+img.language-icon {
+  position: absolute;
+  /* z-index: 1; */
+  top: 30%;
+}
+.skiptranslate {
+  /* display: none; */
+  /* opacity: 0;
+  height: 0; */
+}

@@ -1,0 +1,59 @@
+.catlay--container {
+  display: flex;
+  height: auto;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.catlay--navigation {
+  max-width: 250px;
+  flex: 1;
+  height: auto;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+  background-color: white;
+}
+
+.catlay--navigation::-webkit-scrollbar,
+.catlay--content::-webkit-scrollbar {
+  display: none;
+}
+
+.catlay--content {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+} 
+
+@media screen and (max-width: 1200px) {
+  .catlay--container {
+    padding: 0rem 1rem 0 1rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .catlay--navigation--closed {
+    position: fixed;
+    transform: translateX(-100%);
+    left: 0;
+    z-index: 998;
+    top: 60px;
+  }
+
+  .catlay--navigation--open {
+    /* position: fixed; */
+    transform: translateX(0);
+    left: 0;
+    /* margin-top: -8px; */
+    top: 0;
+    z-index: 998;
+    width: 300px;
+    padding-left: 2rem;
+    /* top: 60px; */
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+  }
+}

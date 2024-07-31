@@ -1,0 +1,218 @@
+.contact-form-1{
+    background-image: url('');
+    background-size: cover;
+    background: no-repeat;
+
+}
+.contact-parent {
+    width: 100%;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1280px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    width: 100%;
+  }
+  .contact-header h1,
+  .contact-header h1 span {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--black0);
+  }
+  
+  .contact-header h1 span {
+    font-weight: 600 !important;
+  }
+  
+  .green-bold {
+    color: var(--green0) !important;
+  }
+  
+  .contact-header h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.6rem;
+    color: var(--black2);
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 2.6rem;
+  }
+  
+  .contact-img {
+    display: none;
+  }
+  
+  .contact-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    /* display: flex;
+    align-items: center; */
+    width: 100%;
+    /* justify-content: center; */
+    margin-top: 20px;
+    
+    /* min-width: 100%; */
+  }
+  
+  .contact-form form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    max-width: 90%;
+    /* min-width: 100%; */
+    width: 100%;
+    margin: auto;
+    /* gap: 1rem; */
+  }
+  
+  .contact-form form button {
+      margin-top: 2rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .contact-container {
+      align-items: flex-start;
+    }
+    .contact-img {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      max-width: 563.16px;
+      height: 471.29px;
+    }
+  
+    .contact-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .contact-form {
+      width: 100%;
+    }
+   
+    .contact-content {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .contact-parent {
+      /* margin-top: 5rem; */
+    }
+    .contact-header {
+      text-align: left;
+    }
+    .contact-header h1,
+    .contact-header h1 span {
+      font-size: 3rem;
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 1400px) {
+      .contact-container {
+          padding: 0;
+        }
+  }
+
+  /* Modal Css */
+  .modal-container {
+    background: var(--white);
+    position: absolute;
+    max-width: 50rem;
+    width: 90%;
+    min-height: auto;
+    left: 0;
+    right: 0;
+    margin: 20rem auto;
+    border-radius: 3rem;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  .modal-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .close-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .join-waitlist-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .join-waitlist-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .join-waitlist-success h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+  
+  .join-waitlist-modal form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+  }
+  
+  .join-waitlist-modal form button{
+    margin-top: 3rem;
+  }
+  
+  .join-waitlist-modal h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+
+  @media(max-width: 768px){
+    .contact-form form{
+      width: 100%;
+      margin: 0;
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,31 @@
+.margin{
+    margin-left: auto;
+}
+/* .css-sjj62m{
+    width: 95% !important;
+    padding-right: 8px;
+} */
+
+/* Define a class for the container */
+.custom-scrollbar {
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  /* Style the scrollbar track (the background) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 2px; /* Adjust the width as needed */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Change the background color */
+    border-radius: 2px; /* Adjust the border radius as needed */
+  }
+  
+  /* Style the scrollbar track on hover */
+  .custom-scrollbar::-webkit-scrollbar-track:hover {
+    background-color: transparent; /* Change the hover background color */
+  }
+  

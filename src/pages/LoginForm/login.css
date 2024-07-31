@@ -1,0 +1,107 @@
+.input-container {
+    position: relative;
+    /* margin: 20px; */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .animated-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    /* width: 200px; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    padding-right: 30px; /* Adjust padding for the eye icon */
+    outline: #006837;
+   text-indent: 30px;
+   background-color: white !important;
+   min-width: 320px;
+  }
+
+  .animated-label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 16px;
+    color: #525355;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    background-color: white ;
+    padding: 2px 32px;
+  }
+
+  .animated-input:focus {
+    border: 1px solid #006837;
+    /* box-shadow: 0 0 10px rgba(0, 1, 2, 0.3); */
+  }
+
+  .animated-input:focus + .animated-label,
+  .animated-input:not(:placeholder-shown) + .animated-label {
+    top: -12px;
+    font-size: 14px;
+    color: #006837;
+    font-weight: 600;
+    padding: 2px 6px;
+   background: white !important;
+  }
+
+  img.input-icon {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    background-color: white;
+}
+
+img.email-icon{
+  top: 22px;
+}
+
+/* selector */
+
+.animated-input::-ms-expand,
+.animated-input::-webkit-select-placeholder {
+  display: none;
+  background-color: white !important;
+}
+
+
+.animated-input::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #006837;
+  background-color: white !important;
+}
+
+p.eye-icon {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+input.animated-input.internal-autofill-selected {
+  background: red !important;
+}
+
+
+@media (max-width: 600px){
+.animated-label{
+font-size: 14px;
+top: 16px;
+}
+}
+
+.error-message{
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}

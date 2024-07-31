@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #039441;
+  --white: #ffffff;
+}
+
+html {
+  /* font-size: 10px; */
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url('../src/assets/images/Bg-Image.png') !important;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+ height: 200px !important;
+ position: fixed;
+ top: 0 !important;
+}
+
+body.chakra-ui-light {
+  margin-right: 0 !important;
+}
